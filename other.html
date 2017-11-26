@@ -43,7 +43,7 @@
     animation-iteration-count: infinite;
     -webkit-animation-name: navbar;
     -webkit-animation-duration: 4s;
-    -webkit-animation-iteratioon-count: infinite;
+    -webkit-animation-iteration-count: infinite;
     
 }
 @keyframes navbar{
@@ -92,12 +92,18 @@
     animation-name: hover;
     animation-duration: 2s;
     animation-iteration-count: 1;
+    animation-fill-mode: fowards;
     -webkit-animation-name: hover;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: fowards;
 }
 
 @keyframes hover{
+    from{background-color: #333;}
+    to{background-color: red;}
+    }
+@-webkit-keyframes hover{
     from{background-color: #333;}
     to{background-color: red;}
     }
