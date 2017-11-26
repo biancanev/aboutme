@@ -1,5 +1,74 @@
 .animation{
   width: 100px;
   height: 100px;
-  animationo-name: fade;
+  animation-name: fade;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes fade{
+  0% {opacity: 1;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes fade{
+  0% {opacity: 1;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+button{
+  background-color: #333;
+  width: inherit;
+  height: 10px;
+}
+
+button:hover{
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+h1 {
+	font-family: Quicksand;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+h3 {
+	font-family: Quicksand;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+}
+p {
+	font-family: Quicksand;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 19.99px;
+}
+blockquote {
+	font-family: Quicksand;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 29.99px;
+}
+pre {
+	font-family: Quicksand;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.57px;
 }
