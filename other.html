@@ -89,9 +89,18 @@
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    animation-name: hover;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    -webkit-animation-name: hover;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
 }
 
+@keyframes hover{
+    from{background-color: #333;}
+    to{background-color: red;}
+    }
 .dropdown-content {
     display: none;
     position: absolute;
