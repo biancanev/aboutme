@@ -107,6 +107,32 @@
     from{background-color: #333;}
     to{background-color: red;}
     }
+.diamond{
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    position: relative;
+    animation-name: diamond;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: diamond;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    }
+@keyframes diamond{
+    0% {left: 100px; top: 0px; background-color: red;}
+    25% {left: 200px; top: 100px; background-color: green;}
+    50% {left: 100px; top: 200px; background-color: blue;}
+    75% {left: 0px; top: 100px; background-color: purple;}
+    100% {left: 100px; top: 0px; background-color: red;}
+    }
+@-webkit-keyframes diamond{
+    0% {left: 100px; top: 0px; background-color: red;}
+    25% {left: 200px; top: 100px; background-color: green;}
+    50% {left: 100px; top: 200px; background-color: blue;}
+    75% {left: 0px; top: 100px; background-color: purple;}
+    100% {left: 100px; top: 0px; background-color: red;}
+    }
 .dropdown-content {
     display: none;
     position: absolute;
@@ -156,5 +182,7 @@
 <h2>Other Things:</h2>
     <div class="boredom"></div>
     <p>So bored. . .</p>
+    <p>So I tried to make this thing fun???? Actually, it's not that fun is it?</p>
+    <div class="diamond"></div>
 </body>
 </html>
